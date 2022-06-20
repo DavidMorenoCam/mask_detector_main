@@ -31,7 +31,7 @@ def mask_image():
 
     # load the input image from disk and grab the image spatial dimensions
     image = cv2.imread("./images/out.jpg")
-    (hm w) = image.shape[:2]
+    (h, w) = image.shape[:2]
 
     # Construct a block from teh image
     blob = cv2.dnn.blobFromImage(image, 1.0, (300, 300), (104.0, 177.0, 123.0))
